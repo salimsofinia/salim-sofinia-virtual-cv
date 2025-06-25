@@ -1,5 +1,24 @@
-Salim Sofinia Virtual CV
+# Salim Sofinia – Virtual Portfolio
 
-This project aims to create a virtual CV that is user friendly, professional, and accessible from anywhere in the world.
+Welcome to my virtual portfolio, a responsive and interactive website that showcases my skills, projects, and contact information. This portfolio is built using HTML, CSS (SCSS compiled), and JavaScript, and is hosted via GitHub Pages.
 
-The technologies used in this project are HTML and CSS.
+## Live Demo
+
+🔗 [View Portfolio](https://salimsofinia.github.io/salim-sofinia-virtual-cv/)  
+
+---
+
+## Tech Stack
+
+- **HTML5** – semantic structure
+- **CSS3** – responsive and customizable styles
+- **JavaScript** – interactivity and UI behavior
+- **Boxicons + Devicon** – for modern icons
+- **ScrollReveal.js** – scroll animation effects
+
+---
+
+## Download CV
+
+The downloadable CV is available via the button on the homepage.  
+Alternatively, [click here](../SalimSofiniaCV.pdf) to download manually.
