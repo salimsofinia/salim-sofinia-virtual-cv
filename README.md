@@ -4,7 +4,7 @@ Welcome to my virtual portfolio, a responsive and interactive website that showc
 
 ## Live Demo
 
-🔗 [View Portfolio](https://salimsofinia.github.io/salim-sofinia-virtual-cv/)  
+🔗 [View Virtual Portfolio](https://salimsofinia.github.io/salim-sofinia-virtual-cv/)  
 
 ---
 
