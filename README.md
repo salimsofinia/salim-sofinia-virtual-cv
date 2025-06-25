@@ -21,4 +21,4 @@ Welcome to my virtual portfolio, a responsive and interactive website that showc
 ## Download CV
 
 The downloadable CV is available via the button on the homepage.  
-Alternatively, [click here](../SalimSofiniaCV.pdf) to download manually.
+Alternatively, [click here](https://salimsofinia.github.io/salim-sofinia-virtual-cv/SalimSofiniaCV.pdf) to download manually.
