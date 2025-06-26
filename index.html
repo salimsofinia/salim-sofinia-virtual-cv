@@ -23,7 +23,7 @@
     <header class="l-header">
       <nav class="nav bd-grid">
         <div>
-          <a href="#home" class="nav__logo">Salim Sofinia</a>
+          <a href="/" class="nav__logo">Salim Sofinia</a>
         </div>
 
         <div class="nav__menu" id="nav-menu">
@@ -256,27 +256,79 @@
       <!--===== CONTACT =====-->
       <section class="contact section" id="contact">
         <h2 class="section-title">Contact</h2>
-
         <div class="contact__container bd-grid">
-          <form action="" class="contact__form">
-            <input type="text" placeholder="Name" class="contact__input" />
-            <input type="mail" placeholder="Email" class="contact__input" />
+          <form
+            id="contact-form"
+            class="contact__form"
+            method="POST"
+            action="https://formsubmit.co/ajax/salimsofinia01719@gmail.com"
+          >
+            <!-- visible fields -->
+            <input
+              name="name"
+              type="text"
+              placeholder="Name"
+              class="contact__input"
+              required
+            />
+            <input
+              name="email"
+              type="email"
+              placeholder="Email"
+              class="contact__input"
+              required
+            />
             <textarea
-              name=""
-              id=""
-              cols="0"
-              rows="10"
+              name="message"
               class="contact__input"
               placeholder="Message"
+              rows="6"
+              required
             ></textarea>
+
+            <!-- disable CAPTCHA -->
+            <input type="hidden" name="_captcha" value="false" />
+
+            <!-- set the e-mail subject -->
             <input
-              type="button"
-              value="Submit"
-              class="contact__button button"
+              type="hidden"
+              name="_subject"
+              value="New contact submission from your portfolio"
             />
+
+            <button type="submit" class="contact__button button">Submit</button>
           </form>
         </div>
       </section>
+
+      <script>
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", async function (e) {
+            e.preventDefault();
+            const form = e.target;
+            const formData = new FormData(form);
+
+            try {
+              const res = await fetch(form.action, {
+                method: "POST",
+                body: formData,
+              });
+              const json = await res.json();
+
+              if (res.ok) {
+                alert("Thank you! Message sent successfully.");
+                window.location.href = "/";
+              } else {
+                console.error("FormSubmit error:", json);
+                alert("Oops—something went wrong. Please try again.");
+              }
+            } catch (err) {
+              console.error("Network error:", err);
+              alert("Network error. Check your connection and try again.");
+            }
+          });
+      </script>
     </main>
 
     <!--===== FOOTER =====-->
